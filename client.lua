@@ -35,6 +35,7 @@ local function spawnVehicles()
 
             spawnedVehicles[i] = vehicle
         end
+        FreezeEntityPosition(vehicle, true)
     end
     vehiclesSpawned = true
 end
