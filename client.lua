@@ -32,12 +32,11 @@ local function spawnVehicles()
             SetVehicleDirtLevel(vehicle, 0.0)
 
             PlaceObjectOnGroundProperly(vehicle)
-
+            FreezeEntityPosition(vehicle, true)
             spawnedVehicles[i] = vehicle
+            vehiclesSpawned = true
         end
-        FreezeEntityPosition(vehicle, true)
     end
-    vehiclesSpawned = true
 end
 
 Citizen.CreateThread(function()
@@ -53,7 +52,6 @@ end)
 AddEventHandler('onResourceStart', function(resourceName)
     if resourceName == GetCurrentResourceName() then
         removeSpawnedVehicles()
-        Citizen.Wait(500)
         spawnVehicles()
     end
 end)
