@@ -18,4 +18,4 @@ Config.CarShowVehicles = {
 }
 
 -- Whitelisted license [admin only]
-Config.WhitelistedLicense = 'license:afa886e27f0e61fe333cecb76f2762d649d2d34d'
+Config.WhitelistedLicense = 'license:a123'
