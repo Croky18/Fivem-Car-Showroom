@@ -1,7 +1,7 @@
 fx_version 'cerulean'
 game 'gta5'
 
-author 'croky1'
+author 'croky18'
 description 'Standalone Car Show Script'
 version '1.0.0'
 
