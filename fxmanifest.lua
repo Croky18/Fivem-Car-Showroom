@@ -1,11 +1,18 @@
 fx_version 'cerulean'
 game 'gta5'
 
-author 'Croky19'
-description 'Car-Showroom'
-version '1.0.1'
+author 'croky1'
+description 'Standalone Car Show Script'
+version '1.0.0'
+
+shared_scripts {
+    'config.lua'
+}
+
+server_scripts {
+    'server/main.lua'
+}
 
 client_scripts {
-    'config.lua',
-    'client.lua'
+    'client/main.lua'
 }
